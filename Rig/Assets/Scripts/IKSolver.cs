@@ -165,7 +165,7 @@ public class IKSolver : MonoBehaviour
     {
         for (int i = 0; i < bones.Length - 1; ++i)
         {
-            if (bones[i] != null)
+            if (bones[i] != null && bones[i + 1] != null)
             {
                 Handles.color = Color.white;
                 Handles.DrawLine(bones[i].position, bones[i + 1].position);
